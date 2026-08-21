@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<title>Blood Match - Dashboard</title>
+<style>
+/* Blood Match - Dashboard page styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Nav */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #c62828;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #c62828;
+}
+
+.navbar .logo span {
+  color: #222222;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  font-size: 15px;
+  padding: 6px 4px;
+}
+
+.navbar ul li a:hover {
+  color: #c62828;
+}
+
+.navbar ul li a.active {
+  color: #c62828;
+  font-weight: bold;
+  border-bottom: 2px solid #c62828;
+}
+
+/* Footer */
+.footer {
+  background-color: #222222;
+  color: #eeeeee;
+  padding: 24px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer .footer-links {
+  margin-top: 8px;
+}
+
+.footer .footer-links a {
+  margin: 0 8px;
+  color: #ff8a80;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.section {
+  padding: 32px 0;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #c62828;
+}
+
+/* Buttons */
+.btn-outline {
+  display: inline-block;
+  background-color: transparent;
+  color: #c62828;
+  border: 2px solid #c62828;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Dashboard header */
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Stats */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.stat-box {
+  background-color: #fdeceb;
+  border-radius: 6px;
+  padding: 16px;
+  text-align: center;
+}
+
+.stat-box .num {
+  font-size: 24px;
+  font-weight: bold;
+  color: #c62828;
+}
+
+.stat-box .label {
+  font-size: 13px;
+  color: #555555;
+}
+
+/* Matches list */
+.match-list {
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.match-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.match-row:last-child {
+  border-bottom: none;
+}
+
+.badge {
+  background-color: #c62828;
+  color: #ffffff;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* Clinic cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 16px;
+  background-color: #fafafa;
+}
+
+.card h3 {
+  color: #c62828;
+  margin-bottom: 6px;
+  font-size: 17px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .stat-grid,
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .dash-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Blood<span>Match</span></div>
+  <ul>
+    <li><a href="Mercado.html">Home</a></li>
+    <li><a href="Bucud.html">About</a></li>
+    <li><a href="Sean.html">Contact</a></li>
+    <li><a href="Harvey.html">Login</a></li>
+    <li><a href="Lanuza.html" class="active">Dashboard</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="dash-header">
+    <div>
+      <h2 class="section-title" style="margin-bottom:2px;">Welcome, Juan</h2>
+      <p style="font-size:14px;color:#666;">Blood Type: <strong>O+</strong> · Status: Donor</p>
+    </div>
+    <a href="login.html" class="btn-outline">Log Out</a>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-box">
+      <div class="num">3</div>
+      <div class="label">Active Matches</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">2</div>
+      <div class="label">Donations Made</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">5</div>
+      <div class="label">Nearby Clinics</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Your Matches</h2>
+    <div class="match-list">
+      <div class="match-row">
+        <div>
+          <strong>Maria Santos</strong><br>
+          <span style="font-size:13px;color:#666;">Recipient · 2.3 km away</span>
+        </div>
+        <span class="badge">O+</span>
+      </div>
+      <div class="match-row">
+        <div>
+          <strong>Carlo Reyes</strong><br>
+          <span style="font-size:13px;color:#666;">Recipient · 4.1 km away</span>
+        </div>
+        <span class="badge">O+</span>
+      </div>
+      <div class="match-row">
+        <div>
+          <strong>Angela Cruz</strong><br>
+          <span style="font-size:13px;color:#666;">Recipient · 5.8 km away</span>
+        </div>
+        <span class="badge">O+</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Nearby Clinics</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Red Cross - Tarlac Chapter</h3>
+        <p>Open today until 5:00 PM · 1.2 km away</p>
+      </div>
+      <div class="card">
+        <h3>Tarlac Provincial Hospital</h3>
+        <p>Open today until 6:00 PM · 3.0 km away</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>© 2026 Blood Match. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="Mercado.html">Home</a>
+    <a href="Bucud.html">About</a>
+    <a href="Sean.html">Contact</a>
+  </div>
+</footer>
+
+
+
+</body></html>
