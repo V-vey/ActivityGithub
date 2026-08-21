@@ -3,18 +3,212 @@
 <head>
 <meta charset="UTF-8">
 <title>Blood Match - Contact Us</title>
-<link rel="stylesheet" href="contact.css">
+<style>
+/* Blood Match - Contact page styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Nav */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #c62828;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #c62828;
+}
+
+.navbar .logo span {
+  color: #222222;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  font-size: 15px;
+  padding: 6px 4px;
+}
+
+.navbar ul li a:hover {
+  color: #c62828;
+}
+
+.navbar ul li a.active {
+  color: #c62828;
+  font-weight: bold;
+  border-bottom: 2px solid #c62828;
+}
+
+/* Footer */
+.footer {
+  background-color: #222222;
+  color: #eeeeee;
+  padding: 24px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer .footer-links {
+  margin-top: 8px;
+}
+
+.footer .footer-links a {
+  margin: 0 8px;
+  color: #ff8a80;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.section {
+  padding: 32px 0;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #c62828;
+}
+
+.section p {
+  color: #444444;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #c62828;
+  color: #ffffff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #a41f1f;
+}
+
+/* Contact form */
+.form-box {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+}
+
+.form-box h2 {
+  color: #c62828;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Info cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 16px;
+  background-color: #fafafa;
+}
+
+.card h3 {
+  color: #c62828;
+  margin-bottom: 6px;
+  font-size: 17px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
 </head>
 <body>
 
 <nav class="navbar">
   <div class="logo">Blood<span>Match</span></div>
   <ul>
-    <li><a href="home.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html" class="active">Contact</a></li>
-    <li><a href="login.html">Login</a></li>
-    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="Mercado.html">Home</a></li>
+    <li><a href="Bucud.html">About</a></li>
+    <li><a href="Sean.html" class="active">Contact</a></li>
+    <li><a href="Harvey.html">Login</a></li>
+    <li><a href="Lanuza.html">Dashboard</a></li>
   </ul>
 </nav>
 
@@ -65,9 +259,9 @@
 <footer class="footer">
   <p>&copy; 2026 Blood Match. All rights reserved.</p>
   <div class="footer-links">
-    <a href="home.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="login.html">Login</a>
+    <a href="Mercado.html">Home</a>
+    <a href="Bucud.html">About</a>
+    <a href="Harvey.html">Login</a>
   </div>
 </footer>
 
