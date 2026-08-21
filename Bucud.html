@@ -1,20 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Blood Match - About</title>
-<link rel="stylesheet" href="Bucud.css">
+<style>
+/* Blood Match - About page styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Nav */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #c62828;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #c62828;
+}
+
+.navbar .logo span {
+  color: #222222;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  font-size: 15px;
+  padding: 6px 4px;
+}
+
+.navbar ul li a:hover {
+  color: #c62828;
+}
+
+.navbar ul li a.active {
+  color: #c62828;
+  font-weight: bold;
+  border-bottom: 2px solid #c62828;
+}
+
+/* Footer */
+.footer {
+  background-color: #222222;
+  color: #eeeeee;
+  padding: 24px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer .footer-links {
+  margin-top: 8px;
+}
+
+.footer .footer-links a {
+  margin: 0 8px;
+  color: #ff8a80;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.section {
+  padding: 32px 0;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #c62828;
+}
+
+.section p {
+  color: #444444;
+}
+
+/* Feature cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 16px;
+  background-color: #fafafa;
+}
+
+.card h3 {
+  color: #c62828;
+  margin-bottom: 6px;
+  font-size: 17px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
 </head>
 <body>
 
 <nav class="navbar">
   <div class="logo">Blood<span>Match</span></div>
   <ul>
-    <li><a href="home.html">Home</a></li>
-    <li><a href="about.html" class="active">About</a></li>
-    <li><a href="sean.html">Contact</a></li>
-    <li><a href="login.html">Login</a></li>
-    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="Mercado.html">Home</a></li>
+    <li><a href="Bucud.html" class="active">About</a></li>
+    <li><a href="Sean.html">Contact</a></li>
+    <li><a href="Harvey.html">Login</a></li>
+    <li><a href="Lanuza.html">Dashboard</a></li>
   </ul>
 </nav>
 
@@ -36,20 +180,57 @@
         <h3>Profile Setup</h3>
         <p>Add your blood type and relevant medical background so matches are accurate.</p>
       </div>
-      <div class="card">
-        <h3>Map Integration</h3>
-        <p>Locate nearby clinics for bloodletting activities in a few taps.</p>
+
+      <div class="section">
+        <h2 class="section-title">Our Mission</h2>
+        <p>
+          We want to make it simple for a voluntary donor to find someone who
+          genuinely needs their blood type, and for a recipient to build a
+          long-term, trusted network of donors rather than searching from
+          scratch every time.
+        </p>
       </div>
-      <div class="card">
-        <h3>Matching System</h3>
-        <p>Get matched with donors or recipients sharing your blood type.</p>
+
+      <div class="section">
+        <h2 class="section-title">What We Offer</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Profile Setup</h3>
+            <p>
+              Add your blood type and relevant medical background so matches are
+              accurate.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Map Integration</h3>
+            <p>
+              Locate nearby clinics for bloodletting activities in a few taps.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Matching System</h3>
+            <p>
+              Get matched with donors or recipients sharing your blood type.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Monitored Messaging</h3>
+            <p>
+              Message your match directly, with monitoring in place to keep
+              agreements fair.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Monitored Messaging</h3>
-        <p>Message your match directly, with monitoring in place to keep agreements fair.</p>
+
+      <div class="section">
+        <h2 class="section-title">The Team</h2>
+        <p>
+          Bucud, Ralph Antoine &middot; Lanuza, John Mathew &middot; Mercado,
+          Regin Ray &middot; Tan, Sean Jedrek &middot; Rombaoa, Jayrald
+        </p>
       </div>
     </div>
-  </div>
 
   <div class="section">
     <h2 class="section-title">The Team</h2>
@@ -58,11 +239,11 @@
 </div>
 
 <footer class="footer">
-  <p>&copy; 2026 Blood Match. All rights reserved. LLC.</p>
+  <p>&copy; 2026 Blood Match. All rights reserved.</p>
   <div class="footer-links">
-    <a href="home.html">Home</a>
-    <a href="sean.html">Contact</a>
-    <a href="login.html">Login</a>
+    <a href="Mercado.html">Home</a>
+    <a href="Sean.html">Contact</a>
+    <a href="Harvey.html">Login</a>
   </div>
 </footer>
 

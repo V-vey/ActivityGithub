@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Blood Match - Home</title>
+<title>Blood Match - Contact Us</title>
 <style>
-/* Blood Match - Home page styles */
+/* Blood Match - Contact page styles */
 
 * {
   margin: 0;
@@ -101,23 +101,7 @@ a {
   color: #c62828;
 }
 
-/* Hero */
-.hero {
-  background-color: #fdeceb;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.hero h1 {
-  font-size: 32px;
-  color: #c62828;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 16px;
-  max-width: 600px;
-  margin: 0 auto 20px auto;
+.section p {
   color: #444444;
 }
 
@@ -137,7 +121,41 @@ a {
   background-color: #a41f1f;
 }
 
-/* Feature cards */
+/* Contact form */
+.form-box {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+}
+
+.form-box h2 {
+  color: #c62828;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Info cards */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -186,47 +204,72 @@ a {
 <nav class="navbar">
   <div class="logo">Blood<span>Match</span></div>
   <ul>
-    <li><a href="Mercado.html" class="active">Home</a></li>
+    <li><a href="Mercado.html">Home</a></li>
     <li><a href="Bucud.html">About</a></li>
-    <li><a href="Sean.html">Contact</a></li>
+    <li><a href="Sean.html" class="active">Contact</a></li>
     <li><a href="Harvey.html">Login</a></li>
     <li><a href="Lanuza.html">Dashboard</a></li>
   </ul>
 </nav>
 
-<section class="hero">
-  <h1>Find your blood match</h1>
-  <p>Blood Match connects voluntary donors with recipients who share their blood type, so help reaches the people who need it faster.</p>
-  <a href="Harvey.html" class="btn">Get Started</a>
-</section>
-
 <div class="container">
   <div class="section">
-    <h2 class="section-title">Why Blood Match</h2>
+    <h2 class="section-title">Contact Us</h2>
+    <p>
+      Have a question, concern, or feedback about Blood Match? Send us a
+      message and our team will get back to you.
+    </p>
+  </div>
+
+  <div class="form-box">
+    <h2>Send a Message</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Juan Dela Cruz" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" />
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="How can we help?" />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Write your message here..."
+        ></textarea>
+      </div>
+      <button type="submit" class="btn" style="width: 100%">
+        Send Message
+      </button>
+    </form>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Other Ways to Reach Us</h2>
     <div class="card-grid">
       <div class="card">
-        <h3>Smart Matching</h3>
-        <p>Get paired with donors or recipients who share your exact blood type and medical needs.</p>
+        <h3>Email</h3>
+        <p>support@bloodmatch.app</p>
       </div>
       <div class="card">
-        <h3>Nearby Clinics</h3>
-        <p>Find nearby bloodletting facilities through our built-in map so donations are easy to schedule.</p>
-      </div>
-      <div class="card">
-        <h3>Direct Messaging</h3>
-        <p>Chat safely with your match to coordinate donations, monitored to keep every exchange fair.</p>
-      </div>
-      <div class="card">
-        <h3>Verified Profiles</h3>
-        <p>Every account includes verified medical info, so matches are safe and reliable.</p>
+        <h3>Phone</h3>
+        <p>+63 900 000 0000</p>
       </div>
     </div>
+  </div>
+</div>
 
 <footer class="footer">
   <p>&copy; 2026 Blood Match. All rights reserved.</p>
   <div class="footer-links">
+    <a href="Mercado.html">Home</a>
     <a href="Bucud.html">About</a>
-    <a href="Sean.html">Contact</a>
     <a href="Harvey.html">Login</a>
   </div>
 </footer>
